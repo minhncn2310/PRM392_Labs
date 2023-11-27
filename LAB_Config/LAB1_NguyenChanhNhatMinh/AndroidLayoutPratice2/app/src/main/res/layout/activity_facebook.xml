@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#3b5998"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_above="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/ll"
+            android:src="@drawable/ic_facebook"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <EditText
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <Button
+            android:textSize="14dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:backgroundTint="#9954638E"
+            android:text="Log in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:text="Sign Up for Facebook"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="Forgot Password ?"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:text="English? Change"
+        android:textColor="#ffffff" />
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_question"
+        android:layout_width="70dp"
+        android:layout_height="30dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to menu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll" />
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Android"
+        android:background="#FBE522"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="#E40606"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="PHP"
+        android:background="#34C0FF"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="#FA0458"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="SQL"
+        android:background="#037508"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="#E6D21F"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="PYTHON"
+        android:background="#FFB445"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="#3AC2FF"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu" />
+
+
+</LinearLayout>

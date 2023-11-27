@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".MainActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/constraintLayout">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="59dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="64dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_money_bag" />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:background="#E8D41C"
+                android:minWidth="80dp"
+                android:padding="5dp"
+                android:text="${AMOUNT}"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Logout"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="662dp">
+
+
+            <SeekBar
+                android:id="@+id/seekBarCar1"
+                android:layout_width="313dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="32dp"
+                android:thumb="@drawable/ic_blue_car"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.407"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SeekBar
+                android:id="@+id/seekBarCar2"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:thumb="@drawable/ic_red_car"
+                app:layout_constraintEnd_toEndOf="@+id/seekBarCar1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/seekBarCar1"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarCar1" />
+
+            <SeekBar
+                android:id="@+id/seekBarCar3"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:thumb="@drawable/ic_yellow_car"
+                app:layout_constraintEnd_toEndOf="@+id/seekBarCar2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/seekBarCar2"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarCar2" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:text="Start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lvAmmount" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="383dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="60dp"
+                android:background="#E0FADF"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarCar3">
+
+                <CheckBox
+                    android:id="@+id/checkBoxBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    app:srcCompat="@drawable/ic_blue_car" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="0.8"
+                    app:srcCompat="@drawable/ic_red_car" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxYellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    app:srcCompat="@drawable/ic_yellow_car" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#18B10D"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Choose your car"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+
+            <ImageView
+                android:id="@+id/pet1Badge"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBarCar1"
+                app:layout_constraintStart_toEndOf="@+id/seekBarCar1"
+                app:layout_constraintTop_toTopOf="@+id/seekBarCar1"
+                app:srcCompat="@drawable/ic_trophy" />
+
+            <ImageView
+
+                android:id="@+id/pet2Badge"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBarCar2"
+                app:layout_constraintStart_toEndOf="@+id/seekBarCar2"
+                app:layout_constraintTop_toTopOf="@+id/seekBarCar2"
+                app:srcCompat="@drawable/ic_trophy" />
+
+            <ImageView
+                android:id="@+id/pet3Badge"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBarCar3"
+                app:layout_constraintStart_toEndOf="@+id/seekBarCar3"
+                app:layout_constraintTop_toTopOf="@+id/seekBarCar3"
+                app:srcCompat="@drawable/ic_trophy" />
+
+            <ListView
+                android:id="@+id/lvAmmount"
+                android:layout_width="373dp"
+                android:layout_height="186dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
